@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumine</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .container {
+            margin-top: 60px; 
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 20%; 
+            padding: 10px; 
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 80%; 
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .care-table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .care-table th, .care-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .care-table th {
+            background-color: pink;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .care-table caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .care-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .care-table tbody tr:hover {
+            background-color: #e0f7fa;
+        }
+
+        button {
+            background-color: #e41f7b; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease-in-out; 
+        }
+
+        button:hover {
+            background-color: #d0175d; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h1 class="logo">LUMINE</h1> 
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produk.html">Products</a></li>
+                <li><a href="pemesanan.html">Order</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="container">
+        <h2 style="color: #e41f7b; text-align: center; font-size: 40px;">Product List</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="images/pashminasatin.jpg" alt="Pashmina Satin">
+                <h3>Pashmina Satin</h3>
+                <p>Price: Rp60.000</p>
+                <p>Description: Elegant and shiny, perfect for formal or casual events.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/pashmina arab.jpg" alt="Pashmina Arab">
+                <h3>Pashmina Arab</h3>
+                <p>Price: Rp75.000</p>
+                <p>Description: Thick and comfortable fabric, perfect for cold weather.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/pashmina jersey.jpg" alt="Pashmina Jersey">
+                <h3>Pashmina Jersey</h3>
+                <p>Price: Rp55.000</p>
+                <p>Description: Comfortable and elastic, ideal for daily activities.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/pashminachiffon.jpg" alt="Pashmina Chiffon">
+                <h3>Pashmina Chiffon</h3>
+                <p>Price: Rp65.000</p>
+                <p>Description: Light and soft, giving an elegant impression.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/hijab1.jpg" alt="Hijab Satin">
+                <h3>Hijab Satin</h3>
+                <p>Price: Rp70.000</p>
+                <p>Description: Gives a luxurious impression, ideal for evening events.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/hijab 3.jpg" alt="Hijab Cotton">
+                <h3>Hijab Cotton</h3>
+                <p>Price: Rp45.000</p>
+                <p>Description: Soft and absorbs sweat, perfect for hot weather.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/hijab4.jpg" alt="Hijab Jersey">
+                <h3>Hijab Jersey</h3>
+                <p>Price: Rp50.000</p>
+                <p>Description: Flexible and comfortable, easy to wear without much styling.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/hiijab5.jpg" alt="Hijab Chiffon">
+                <h3>Hijab Chiffon</h3>
+                <p>Price: Rp60.000</p>
+                <p>Description: Transparent and light, gives an elegant feminine touch.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+
+        <table class="care-table">
+            <caption style="color: #e41f7b; text-align: center; font-size: 30px;">Hijab Care Instructions Based on Fabric Type</caption>
+            <thead>
+                <tr>
+                    <th>Fabric Type</th>
+                    <th>Washing Instructions</th>
+                    <th>Drying Instructions</th>
+                    <th>Ironing Instructions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Satin</td>
+                    <td>Hand wash with cold water.</td>
+                    <td>Dry in a shaded area, avoid direct sunlight.</td>
+                    <td>Iron with low heat, avoid direct contact with fabric.</td>
+                </tr>
+                <tr>
+                    <td>Jersey</td>
+                    <td>Machine wash with cold water and mild detergent.</td>
+                    <td>Dry in a shaded area, do not wring.</td>
+                    <td>Iron with low heat if necessary.</td>
+                </tr>
+                <tr>
+                    <td>Chiffon</td>
+                    <td>Hand wash with gentle liquid soap.</td>
+                    <td>Hang dry, avoid wringing.</td>
+                    <td>Iron with low heat, avoid excessive heat.</td>
+                </tr>
+                <tr>
+                    <td>Cotton</td>
+                    <td>Machine wash with warm water and mild detergent.</td>
+                    <td>Dry in a place with enough sunlight, avoid damp areas.</td>
+                    <td>Iron with medium heat, ensure fabric is slightly damp.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
