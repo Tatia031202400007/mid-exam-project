@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-background {
+            position:relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 55%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .content h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        main.container {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #ff66b2;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .leaders {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 30px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .leader {
+            text-align: center; 
+            margin: 0 20px;
+        }
+
+        .leader-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease, border-radius 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .leader-photo img:hover {
+            transform: scale(1.1);
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .leader-info h3 {
+            font-size: 20px;
+            color: #ff66b2;
+        }
+
+        .leader-info p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .product-items {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item ol, .product-item li {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        .product-list {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-list li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .contact-info p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <h1 class="logo">LUMINE</h1>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./produk.html">Products</a></li>
+                    <li><a href="./pemesanan.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to LUMINE</h1>
+            <p>
+                Lumine is a distinguished hijab store in Indonesia, dedicated to offering a wide range of fashionable and high-quality hijabs for women. Our mission is to combine modesty with modern style, providing a variety of designs, colors, and fabrics to suit every occasion. At Lumine, we believe that wearing a hijab should be a statement of elegance and individuality, and we aim to empower women to express themselves confidently while embracing their faith. With a focus on comfort, style, and affordability, Lumine is the ultimate destination for women seeking fashionable and modest clothing options.
+            </p>
+        </div>
+    </div>
+    
+    <main class="container">
+        <section>
+            <h2>Our Team</h2>
+            <div class="leaders">
+                <div class="leader">
+                    <div class="leader-photo">
+                        <img src="images/tatia.jpg" alt="Tatia Rohmatul Alsyifa">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Tatia Rohmatul Alsyifa</h3>
+                        <p>CEO & Founder Hijab Store</p>
+                    </div>
+                </div>
+                <div class="leader">
+                    <div class="leader-photo">
+                        <img src="images/fila.jpg" alt="Alhasuri Isroati Filla">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Alhasuri Isroati Filla</h3>
+                        <p>Head of Design & Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Best Seller Collection</h2>
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="images/pashmina jersey.jpg" alt="Pashmina Polos">
+                    <h3>Pashmina Jersey</h3>
+                    <ol>
+                        <li>Price: Rp55,000</li>
+                        <li>Description: Comfortable and elastic, suitable for daily activities.</li>
+                    </ol>
+                    <button onclick="location.href='pemesanan.html'">Order Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/hiijab5.jpg" alt="Chiffon Hijab">
+                    <h3>Chiffon Hijab</h3>
+                    <ol>
+                        <li>Price: Rp60,000</li>
+                        <li>Description: Transparent and light, gives an elegant feminine touch.</li>
+                    </ol>
+                    <button onclick="location.href='pemesanan.html'">Order Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/pashminasatin.jpg" alt="Satin Pashmina">
+                    <h3>Satin Pashmina</h3>
+                    <ol>
+                        <li>Price: Rp60,000</li>
+                        <li>Description: Elegant and shiny, suitable for both formal and casual events.</li>
+                    </ol>
+                    <button onclick="location.href='pemesanan.html'">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Offline Store</h2>
+            <ul class="product-list">
+                <li>Jl. Merdeka No. 10, Central Jakarta, DKI Jakarta, Indonesia</li>
+                <li>Jl. Raya Cendana No. 23, Bandung, West Java, Indonesia</li>
+                <li>Jl. Kuningan No. 45, Surabaya, East Java, Indonesia</li>
+                <li>Jl. Sumber Rejeki No. 8, Yogyakarta, DIY, Indonesia</li>
+                <li>Jl. Pantai Indah No. 67, Bali, Indonesia</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <ol>
+                    <li><p>Email: lumineofficial@gmail.com</p></li>
+                    <li><p>Phone: 0812-3456-7890</p></li>
+                </ol>
+            </div>
+        </section>        
+    </main>
+</body>
+</html>
